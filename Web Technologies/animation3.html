@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movement</title>
+        
+        <style>
+            p{border: 5px solid brown;
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            animation: movement 10s infinite;
+            position: absolute}
+            
+            @keyframes movement{
+                0%{background-color: aqua;
+                border-radius: 100px;
+                top: 0px; left: 0px;}
+                
+                25%{background-color: blueviolet;
+                border-radius: 0px 100px;
+                top: 0px; left: 450px}
+                
+                50%{background-color: silver;
+                border-radius: 100px 0px;
+                top: 450px; left: 450px;}
+                
+                75%{background-color: yellow;
+                border-radius: 100px;
+                top: 450px; left: 0px}
+                
+                100%{background-color: gold;
+                border-radius: 0px;
+                top: 0px; left: 0px}
+            }
+        </style>
+    </head>
+    
+    <body>
+        <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Movement&lt;/title&gt;
+        
+        &lt;style&gt;
+            p{border: 5px solid brown;
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            animation: movement 10s infinite;
+            position: absolute}
+            
+            @keyframes movement{
+                0%{background-color: aqua;
+                border-radius: 100px;
+                top: 0px; left: 0px;}
+                
+                25%{background-color: blueviolet;
+                border-radius: 0px 100px;
+                top: 0px; left: 450px}
+                
+                50%{background-color: silver;
+                border-radius: 100px 0px;
+                top: 450px; left: 450px;}
+                
+                75%{background-color: yellow;
+                border-radius: 100px;
+                top: 450px; left: 0px}
+                
+                100%{background-color: gold;
+                border-radius: 0px;
+                top: 0px; left: 0px}
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+        &lt;p&gt;&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+        
+        <p></p>
+        
+        <hr>
+        
+        <ul>
+            <li>position, top and left are used to provided such types of animation.</li>
+            
+            <li> transform: translate() is used to provide the same animation without the need of position. It is also used to provide curvy path.</li>
+            
+        </ul>
+    </body>
+</html>

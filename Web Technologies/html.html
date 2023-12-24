@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My First Web Page </title>
+    </head>
+    <body bgcolor="silver" margins>
+        <hr>
+        <center> <h2> Heading Tags </h2> </center>
+        <p> In html to display different levels of heading, heading tags are used <br> &lt;h1&gt; to &lt;h6&gt; <br> Heading tag doesn't change font style rather font size. <br> On increasing the heading the font size consecutevily decreases but no changes in font style. </p>
+        <h1> Akhilesh </h1>
+        <h2> Akhilesh </h2>
+        <h3> Akhilesh </h3>
+        <h4> Akhilesh </h4>
+        <h5> Akhilesh </h5>
+        <h6> Akhilesh </h6>
+        <!-------------------->
+
+        <hr>
+        <center> <h2> &lt;p&gt; Tag </h2> </center>
+        <p>
+            The &lt;p&gt; tag defines a paragraph with different font style and font size when compare to &lt;pre&gt; tag.
+            &lt;p&gt; tag does not preserve the spaces.
+            When multiple lines are there in paragraph then &lt;p&gt; tag will adjust the line according to the available screen width and displays the remaining content in the next line.
+            Defines paragraph text.
+        </p>
+        <!-------------------->
+
+        <hr>
+        <center> <h2> &lt;pre&gt; Tag </h2> </center>
+        <pre>
+            The &lt;pre&gt; tag defines pre formatted text.
+            &lt;pre&gt; tag preserve the spaces.
+            &lt;pre&gt; tag will display the multiple line content in the same line by exceeding the limit of the screen width.
+            Defines preformatted text.
+        </pre>
+        <!-------------------->
+
+        <hr>
+        <center> <h2> anchor &lt;a&gt; Tag </h2> </center>
+        <p> This tag is used to create the hypertext or clickable text in the webpage. <br> "href" means hyper reference :- href is an attribute which is used to link the web page to the given hyper text. <br> Attribute is used to add extra behaviours to the tags </p>
+        <a href = "https://www.linkedin.com/in/asdtiwari/"> <h1> LinkedIN </h1> </a>
+        <a href = "https://wa.me/+917000454120/"> <big> WhatsApp </big></a>
+        <a href = "https://www.instagram.com/asdtiwariji/"> Instagram </a>
+        <!-------------------->
+
+        <hr>
+        <center> <h2> break &lt;br&gt; Tag </h2> </center>
+        <p> Line break tag is used to break the line &amp; move the content to the new line <br> Closing is not required </p>
+        <a href = "https://wa.me/+917000454120/"> <big> WhatsApp </big></a>
+        <br>
+        <a href = "https://www.instagram.com/asdtiwariji/"> Instagram </a>
+        <!-------------------->
+
+        <hr>
+        <center> <h2> Inline Tag / Block level Tag </h2></center>
+        <p> Those tags which give line break automatically (implicitly) i.e., without using &lt;br&gt; tag are known as block level tags <br> Example: &lt;big&gt;, &lt;p&gt;, &lt;pre&gt;, heading tags, etc. </p>
+        <p> Those tags which don't give line break automatically (implicitly) i.e., to give break, we've to use &lt;br&gt; tag are known as Inline tag. <br> Example: anchor &lt;a&gt; tag </p>
+        <!-------------------->
+
+        <hr> 
+        <center> <h2> Paired Tag / Unpaired Tag </h2> </center>
+        <p> Paired Tag: Such Tag which has seperate opening (&lt;tag&gt;) and closing (&lt;/tag&gt;) known as paired tags. <br> Example: &lt;p&gt;, &lt;html&gt;, &lt;center&gt;, &lt;a&gt;, &lt;pre&gt;</p>
+        <p> Unpaired Tag: Such Tag which has only opening tag and no closing tag i.e., closing tag is not mandatory. <br> Example: &lt;br&gt;, &lt;hr&gt;, etc. </p>
+        <!-------------------->
+
+        <hr>
+        <center> <h2> &lt;hr&gt; Tag </h2> </center>
+        <p> &lt;hr&gt; tag is used to seperate the content on the webpage. It is also known as horizontal rule. It gives a horizontal line and it is block level tag.</p>
+        <!-------------------->
+
+        <hr>
+        <center> <h2> Multimedia Tag </h2></center>
+        <p> &lt;img&gt; <br> &lt;audio&gt; <br> &lt;video&gt; </p> 
+        <!-------------------->
+
+        <hr>
+        <center> <h2> &lt;img&gt; Tag </h2></center>
+        <p> It is used to display the images on the webpage. <br> It is of type Unpaired tag i.e., closing is not required. <br> "src" (Source) attribute we need to use with &lt;img&gt; tag to give the path of image. <br> &lt;img&gt; tag is inline tag. <br> The image should be present in the same folder on which you are working or on other way we can copy the path of image directly and paste it in our source code using "src" attribute <br> "height" and "width" are also attributes. </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYnJzuZBghGzLrpTXH3NSMLGibLGbaE8bVjQ&usqp=CAU" height="200" width="200">
+        <!-------------------->
+
+        <hr>
+        <center> <h2> &lt;audio&gt; Tag </h2></center>
+        <p> How to add audio on webpage? <br> 1. Download one audio and save in the same folder on which you are working. <br> 2. Use &lt;audio&gt; tag along with "src" attribute to give path of audio. </p>
+        <p> &lt;audio&gt; tag is of type paired tag. <br> It is of type inline tag. <br> &lt;audio&gt; tag requires "controls" attributes to give the control like (play, pause, speed, etc.) </p> 
+        <audio src="https://upload.wikimedia.org/wikipedia/commons/9/99/Wolfgang_Amadeus_Mozart_-_Symphony_40_g-moll_-_1._Molto_allegro.ogg" controls> </audio>
+        <!-------------------->
+
+        <hr>
+        <center> <h2> &lt;video&gt; Tag </h2> </center>
+        <p> How to display the video on the webpage? <br> 1. Download one video and save in the same folder on which your are working <br> 2. Use &lt;video&gt; tag along with "src" attribute to give the path of video.</p>
+        <p> &lt;video&gt; tag is of type paired tag. <br> It is of type inline tag. <br> &lt;video&gt; tag requires "controls" attribute to give the controls like (play, pause, speed, etc.) </p>
+        <video src="https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a7/How_to_make_video.webm/How_to_make_video.webm.720p.vp9.webm" height="200px" width="250" controls></video>
+        <!-------------------->
+
+        <hr>
+        <center> <h2> Text Formatting Tags </h2></center>
+        <p> 
+            Underline &lt;u&gt; &lt;/u&gt; <br> <u>Underline</u> <br> It is used to give underline to the text. <br>
+        </p>
+        <p>
+            Italic &lt;i&gt; &lt;/u&gt; <br> <i>Italic</i> <br> The content inside this tag is displayed in italic. <br>
+        </p>
+        <p>
+            Bold &lt;b&gt; &lt;/b&gt; <br> <b>Bold</b> <br>It is used to display the content in bold. <br>
+        </p>
+        <p>
+            Strong &lt;strong&gt; &lt;/strong&gt; <br> <strong>Strong means bold with importance</strong> <br> This tag is used to mark the content having Strong importance on the webpage. It works just like html bold tag style-wise but it adds additional meaning to the text inside this tag which is condidered as important by browser &amp; search engine.<br>
+        </p>
+        <p>
+            Big &lt;big&gt; &lt;/big&gt; <br> <big>Big means 1 font size greater than other</big> <br> It is used to display the content one font size larger than the surrounding contents. <br>
+        </p>
+        <p>
+            Small &lt;small&gt; &lt;/small&gt; <br> <small>Small means 1 font size smaller than other</small> <br> It is used to display the content one font size smaller than the surrounding contents  <br>
+        </p>
+        <p>
+            SuperScript &lt;sup&gt; &lt;/sup&gt; <br> Cl<sup>-</sup> <br> A SuperScript is a number, figure, symbol or indicator that is smaller than the normal line of type and is set slightly above it.<br>
+        </p>
+        <p>
+            SubScript &lt;sub&gt; &lt;/sub&gt; <br> H<sub>2</sub>O <br> A subscript is a number, figure, symbol, or indicator that is smaller than the normal line of type and is set slightly below it.<br>
+        </p>
+        <p>
+            Mark &lt;mark&gt; &lt;/mark&gt; <br> <mark>Mark</mark> <br> It is used to highlight the text. <br> 
+        </p>
+        <p>
+            Strike &lt;strike&gt; &lt;/strike&gt; <br> <strike>Strike</strike> <br> This tag places the horizontal line on the text. <br>
+        </p>
+        <p>
+            Emphasis &lt;em&gt; &lt;/em&gt; <br> <em> Emphasis means italic with importance </em> <br> The emphasis tag is used to define emphasized text. The content inside is displayed in italic. A screen reader will pronounce the words in &lt;em&gt; with an emphasis, using verbal stress. <br>
+        </p>
+        <pre> Combination of Text formatting Tags gives more special effects. </pre>
+        <!-------------------->
+
+        <hr>
+        <center> <h2> Web Element </h2></center>
+        <p> Container (tag) + Content = Web Element <br> It is also known as HTML element</p>
+        <!-------------------->
+
+        <hr>
+        <center> <h2> List </h2></center>
+        <p> List are used to make the set of related items together. <br> There are 3 types of list: </p>
+        <pre> Ordered List</pre>
+        <ol>
+            <li> An ordered list start with &lt;ol&gt; tag. </li>
+            <li> Each list item starts with &lt;li&gt; tag. </li>
+            <li> The list items will be marked with numbers by default. </li>
+            <li> &lt;ol&gt; &lt;/ol&gt; tag is of type paired tag. </li>
+            <li> &lt;li&gt; &lt;/li&gt; is of type paired tag </li>
+        </ol>
+        <pre> Unordered List </pre>
+        <ul>
+            <li> An unordered list starts with the &lt;ul&gt; tag. </li>
+            <li> Each list item starts with the &lt;li&gt; tag. </li>
+            <li> The list item will be marked with bullets by default. </li>
+            <li> It is of paired tag. </li>
+        </ul>
+        <pre> Descriptional List</pre>
+        <dl>
+            <dt> &lt;dl&gt; </dt>
+            <dd> Defines description list. </dd>
+            <dd> Paired Tag</dd>
+            <dt> &lt;dt&gt; </dt>
+            <dd> Defines description term in the list.</dd>
+            <dd> Paired Tag </dd>
+            <dt> &lt;dd&gt;</dt>
+            <dd> Defines description data in the list.</dd>
+            <dd> Paired Tag</dd>
+        </dl>
+        <!-------------------->
+        
+        <hr>
+        <center> <h2> Form's Element </h2></center>
+        <ol>
+            <li> Name Box </li>
+            <li> Email Box </li>
+            <li> Number Box (Spin control) </li>
+            <li> Phone Number Box </li>
+            <li> Check Box </li>
+            <li> Radio Buttons </li>
+            <li> Submit Buttons </li>
+            <li> Reset Buttons </li>
+            <li> Upload Buttons </li>
+            <li> Search Box </li>
+            <li> Color Pallet </li>
+            <li> Range Button </li>
+        </ol>
+        <!-------------------->
+        
+        <hr size="5px" color="grey">
+        <fieldset>
+        <center> <h2> Form </h2> </center>
+        
+        <form>
+            <h3> Welcome User...!! <br> Please fill out the given form </h3>
+
+            <hr>
+            
+            <h4> Text Box: </h4>
+            <label> Name: </label>
+            <input type="text" required placeholder="Enter the Full Name" pattern="[a-z A-Z]{3,15}" title="Enter Valid Name">
+            <p> 1. Name should contain oly characters.</p>
+            <p> 2.Name should contain minimum 3 characters and maximum 15 characters.</p>            
+            <br><br>
+            
+            <h4> Number Box:</h4>
+            <label> Age :</label>
+            <input type="number" placeholder="Age" min="18" max="60">
+            <p>1. Minimum age should be 18.</p>
+            <p>2. Maimum age should be 60.</p>
+            <br><br>
+            
+            <h4> Phone Number Box </h4>
+            <label> Phone Number:</label>
+            <input type="text" placeholder="Mobile Number" required pattern="^[6-9]{1}[0-9]{9}$" title="Exclude Country Code">
+            <br><br>
+            
+            <h4> Email Box </h4>
+            <label> Email: </label>
+            <input type="email" placeholder="Email Address" required pattern="[a-zA-Z0-9$%^]+@[a-zA-Z]+.[a-z]{2,3}">
+            
+            <h4> Check Box </h4>
+            <label> Technical Skills: </label>
+            <input type="checkbox"> Java
+            <input type="checkbox"> Python
+            <input type="checkbox"> SQL
+            <input type="checkbox"> Web Technologies
+            <input type="checkbox"> Testing
+            <p> To create checkbox we need to select input type="checkbox".</p>
+            <p>Here, we can select multiple options.</p><br>
+            
+            <h4> Select Box/ Dropdown Menu</h4>
+            <label> Select City: </label>
+            <select>
+                <option> Select </option>
+                <option> Indore </option>
+                <option> Delhi </option>
+                <option> Rewa </option>
+                <option> Mumbai </option>
+            </select>
+            <p> While creating dropdown menu all the options which are given using option tag, should be present in select tag</p><br>
+            
+            <h4> Radio Button</h4>
+            <label> Gender: </label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+            <p> While creating radio buttons we have to use "name" attribute with same value for all, otherwise it will allow user to select multiple options. </p><br>
+            
+            <h4> Upload Button </h4>
+            <label> Choose your file </label>
+            <input type="file">
+            <p> To create upload button we need to select input type="file".</p><br>
+            
+            <h4> Text Area </h4>
+            <textarea> Enter your comment </textarea>
+            <br><br>
+            
+            <h4> Calendar </h4>
+            <label> Enter your DOB </label>
+            <input type="date" min="2000-01-01" max="2023-07-10"><br><br>
+            
+            <h4> Reset Button </h4>
+            <input type="reset"><br><br>
+            
+            <h4> Range Button </h4>
+            <input type="range"><br><br>
+            
+            <h4> Color Pallet </h4>
+            <input type="color"><br><br>
+            
+            <h4> Search Box </h4>
+            <input type="search"><br><br>
+            
+            <h4> Password </h4>
+            <input type="password"><br><br>
+            
+            <h4> Submit </h4>
+            <input type="submit" title="Must re-check all the details before submit">
+            <br><br>
+        </form>
+        </fieldset>
+        <!-------------------->
+        
+        <hr size="5px" color="grey">
+        <center> <h2> "target" attribute </h2> </center>
+        
+        <a href = "https://www.google.com/" target="_blank">Google in new tab</a>
+        
+        <a href = "https://www.google.com/" target="_self"> Google in same tab</a>
+        <p>It is used for anchor &lt;a&gt; &lt;/a&gt; tag.</p>
+        <p> By default anchor tag promote the link to the current tab only </p>
+        <p> taget attribute is used to specify where to open the linked html document or link</p>
+        <p> "_blank" value is used to open link in new tab while "_self" value is used to open in same tab</p>
+        <!-------------------->
+        
+        <hr>
+        <center> <h2> &lt;iframe&gt; tag</h2></center>
+        <p>&lt;iframe&gt; is used to display another webpage in the same page inside a frame which can be resized using "height" and "width" attribute and "src" attribute is used to tell the location or hyperlink address of another webpage which we want to display.</p>
+        <p>In other word iframe tag is used to embed the external webpage in the current html page. This loads another html document in the current html document. Example: </p>
+        <iframe src = "https://www.kodnest.com/" height = "300px" width = "600px"></iframe>
+        <!-------------------->
+        
+        <hr>
+        <center> <h2> &lt;table&gt; tag</h2></center>
+        <p> It is used to create table in html body. Inside the &lt;table&gt; &lt;/table&gt; elements are inserted row wise and &lt;tr&gt; &lt;/tr&gt; is tag which represent the table row. Heading of column is given using &lt;th&gt; &lt;/th&gt; inside table row tag. Data element is given using &lt;td&gt; &lt;/td&gt; inside table row tag. "border" attribute is used to provide border to table. Example: </p>
+        <table border>
+            <tr> <th> Name </th> <th> PhNo </th> </tr>
+            <tr> <td> Akhilesh </td> <td> 7000454120 </td> </tr>
+            <tr> <td> Vidit </td> <td> 6265732620 </td> </tr>
+        </table>
+        
+        <br>
+        
+        <table border="">
+            <tr>
+                <th colspan="2"> Name </th>
+                <th> Age </th>
+                <th> City </th>
+            </tr>
+            <tr>
+                <td> Abhishek </td>
+                <td> Tiwari </td>
+                <td> 21 </td>
+                <td rowspan="3"> Rewa </td>
+            </tr>
+            <tr> 
+                <td> Vivek </td>
+                <td> Agnihotri </td>
+                <td> 23 </td>
+            </tr>
+            <tr>
+                <td> Ashutosh </td>
+                <td> Tiwari </td>
+                <td> 18 </td>
+            </tr>
+            <tr>
+                <td> Richa </td>
+                <td> Tiwari </td>
+                <td> 16 </td>
+                <td> Bhopal </td>
+            </tr>
+        </table>
+        
+        <br>
+        
+        <table border>
+            <tr>
+                <td colspan="2"> &emsp; </td>
+                <td> &emsp; </td>
+                <td> &emsp; </td>
+            </tr>
+            <tr>
+                <td> &emsp; </td>
+                <td> &emsp; </td>
+                <td rowspan="3"> &emsp; </td>
+                <td> &emsp; </td>
+            </tr>
+            <tr>
+                <td> &emsp; </td>
+                <td> &emsp; </td>
+                <td> &emsp; </td>
+            </tr>
+            <tr>
+                <td> &emsp; </td>
+                <td> &emsp; </td>
+                <td> &emsp; </td>
+            </tr>
+        </table>
+        
+        <br>
+        
+        <table border="1">
+            <tr>
+                <td rowspan="3"> &emsp; </td>
+                <td colspan="2"> &emsp; </td>
+                <td colspan="2"> &emsp; </td>
+            </tr>
+            <tr>
+                <td> &emsp; </td>
+                <td> &emsp; </td>
+                <td> &emsp; </td>
+                <td> &emsp; </td>
+            </tr>
+            <tr>
+                <td colspan="2"> &emsp; </td>
+                <td colspan="2"> &emsp; </td>
+            </tr>
+        </table>
+        
+        <br>
+        
+        <p> "&amp;emsp;" is used to give tab gap.</p>
+        <p> "rowspan" &amp; "colspan" are attributes and used to merge rows and column respectively. </p>
+        <!-------------------->
+    </body>
+</html>

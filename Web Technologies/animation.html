@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation</title>
+        <style>
+            dt{font-size: 20px;}
+            
+            dd{font-size: 15px;}
+            
+            p{border: 5px solid red;
+            height: 200px;
+            width: 300px;
+            background-color: aqua;
+            animation-name: pattern1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite}
+            
+            @keyframes pattern1
+            {
+                from{background-color: aqua;
+                height: 200px;
+                width: 300px; 
+                border-radius: 0px;
+                border-style: solid;}
+                
+                to{background-color: blue;
+                height: 400px;
+                width: 400px;
+                border-radius: 400px;
+                border-style: inset;}
+            }
+        </style>
+    </head>
+    
+    <body>
+        <fieldset><table><tr>
+            <td><pre>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Animation&lt;/title&gt;
+            &lt;style&gt;
+                p{border: 5px solid red;
+                height: 200px;
+                width: 300px;
+                background-color: aqua;
+                animation-name: pattern1;
+                animation-duration: 5s;
+                animation-iteration-count: infinite}
+
+                @keyframes pattern1
+                {
+                    from{background-color: aqua;
+                    height: 200px;
+                    width: 300px; 
+                    border-radius: 0px;
+                    border-style: solid;}
+                    
+                    to{background-color: blue;
+                    height: 400px;
+                    width: 400px;
+                    border-radius: 400px;
+                    border-style: inset;}
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+
+        &lt;body&gt;
+            &lt;center&gt;&lt;p&gt;&lt;/p&gt;&lt;/center&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</pre></td>
+            
+            <td> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; </td>
+            
+            <td><center><p></p></center></td>
+        </tr></table></fieldset>
+        
+        <ul>
+            <li> Instead of defining explicitly the animation's name, duration and iteration count, we can just use "animation: pattern1 5s infinite"</li>
+            
+            <li> the values of style tag can not be commented by pair of &lt;!--- and  --&gt;, we have to use /* and */</li>
+        </ul>
+        
+        <hr>
+        
+        <dl>
+            <dt>animation-name</dt>
+            <dd>It specifies the animation name which we have created using the followed with animation name, and we can give any animation</dd>
+            
+            <dt>animation-duration</dt>
+            <dd>This property specifies the duration of the animation on an element.</dd>
+            
+            <dt>animation-iteration-count</dt>
+            <dd> This property sepcifies the total iteration of the repetation of the animation to be infinte.</dd>
+            
+            <dt>animation</dt>
+            <dd> By Using this property we can specify "animation-name", "animation-duration", "animation-iteration-count" at once.</dd>
+        </dl>
+    </body>
+</html>

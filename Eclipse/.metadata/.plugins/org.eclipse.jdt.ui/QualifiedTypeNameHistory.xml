@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.w3c.dom.ls.LSOutput"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="newLearning.Book"/>
+    <fullyQualifiedTypeName name="newLearning.Student"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="newLearning.BeatBox.MyDownTempoListener"/>
+    <fullyQualifiedTypeName name="newLearning.BeatBox.MyUpTempoListener"/>
+    <fullyQualifiedTypeName name="javax.swing.JButton"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.NegativeArraySizeException"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.acer.program1.Employee"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.IdClass"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Transform Margin & Padding
+        </title>
+        
+        <style>
+            *{font-family: cursive;
+            background-color: black;
+            color: white;}
+            
+            .original{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color:darkorange;
+            }
+            
+            .scaleX{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color:darkorange;
+            transform: scalex(2);
+            margin-left: 30px;}
+            
+            .scaleY{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color:darkorange;
+            transform: scaley(2);
+            margin-top: 50px;
+            margin-bottom: 50px}
+            
+            .scale{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: scale(2,0.5);
+            margin-left: 30px}
+            
+            .skewX{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: skewX(20deg);
+            margin-left: 30px}
+            
+            .skewY{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: skewY(20deg);
+            margin-left: 30px}
+            
+            .rotateX{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: rotateX(50deg);
+            margin-left: 30px}
+            
+            .rotateY{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: rotateY(50deg);
+            margin-left: 30px}
+            
+            .rotateZ{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: rotateZ(20deg);
+            margin-left: 30px;}
+            
+            .rotate{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: rotate(20deg);
+            margin-left: 30px}
+            
+            .rotate3d{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: rotate3d(20deg);
+            margin-left: 30px}
+        </style>
+    </head>
+    
+    <body>
+        <center><h1>Transform Margin &amp; Padding</h1></center>
+        
+        <pre>Tranform properties: scale, skew, translate, rotate</pre>
+        
+        <pre>Using transform properties we can transform, rotate, skew and scale an element.</pre>
+        
+        <ul>            
+            <li>scalex(n) property is used to scale html element n time in x axis.</li>
+            
+            <li>scaley(n) property is used to scale html element n time in y axis.</li>
+            
+            <li>scale(m, n) property is used to scale html element m times in x axis and n times in y axis.</li>
+            
+            <li>skewX(m) and skewY(m) are used to skewed the html elements in m degree in x and y axis respectively.</li>
+            
+            <li>Providing positive deg in rotate() rotates html elements in clockwise direction and negative deg in rotate() rotates html elements in anti-clockwise direction.</li>
+            
+            <li>margin-left property is used to provide margin from the left side.</li>
+            
+            <li><big> margin </big> properties give from the html elements not from the browser's border.</li>
+            
+            <li>Similarly, there is something known as <big>padding </big> which moves the content inside the html elements</li>
+            
+            <li>We can directly pass the alignment in all direction using margin: top_px left_px</li>
+            
+            <li>Similarly for padding also, padding: top_px left_px</li>
+            
+            <li>Negative values for padding properties are not allowed.</li>
+            
+            <li>Negative values for margin propety are used to go opposite to the functionality of the respective property</li>
+        </ul>
+        
+        <table><tr><td style="padding-left: 50px;">
+        <h2> Original </h2>
+        <p class="original"></p>
+        
+        <h2> scaleX(2)</h2>
+        <p class="scaleX"></p>
+        
+        <h2> scaleY(2)</h2>
+        <p class="scaleY"></p>
+        
+        <h2> scale(2,0.5)</h2>
+        <p class="scale"></p>
+        
+        <h2> skewX(20deg)</h2>
+        <p class="skewX"></p>
+        
+        <h2> skewY(20deg)</h2>
+        <p class="skewY"></p>
+        
+        <h2> rotateX(50deg)</h2>
+        <p class="rotateX"></p>
+        
+        <h2> rotateY(50deg)</h2>
+        <p class="rotateY"></p>
+        
+        <h2> rotateZ(50deg)</h2>
+        <p class="rotateZ"></p>
+        
+        <h2> rotate(50deg)</h2>
+        <p class="rotate"></p>
+        
+        <h2> rotate3d(50deg)</h2>
+        <p class="rotate3d"></p>
+        </td>
+        
+        <td>
+            <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;
+            Transform
+        &lt;/title&gt;
+        
+        &lt;style&gt;
+            .original{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color:darkorange;
+            }
+            
+            .scaleX{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color:darkorange;
+            transform: scalex(2);
+            margin-left: 30px}
+            
+            .scaleY{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color:darkorange;
+            transform: scaley(2);
+            margin-top: 50px;
+            margin-bottom: 50px}
+            
+            .scale{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: scale(2,0.5);
+            margin-left: 30px}
+            
+            .skewX{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: skewX(20deg);
+            margin-left: 30px}
+            
+            .skewY{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: skewY(20deg);
+            margin-left: 30px}
+            
+            .rotateX{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: rotateX(50deg);
+            margin-left: 30px}
+            
+            .rotateY{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: rotateY(50deg);
+            margin-left: 30px}
+            
+            .rotateZ{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: rotateZ(20deg);
+            margin-left: 30px;}
+            
+            .rotate{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: rotate(20deg);
+            margin-left: 30px}
+            
+            .rotate3d{border: 4px solid red;
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            transform: rotate3d(20deg);
+            margin-left: 30px}
+        &lt;/style&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+        
+        &lt;table&gt;&lt;tr&gt;&lt;td style="padding-left: 50px;"&gt;
+        &lt;h2&gt; Original &lt;/h2&gt;
+        &lt;p class="original"&gt;&lt;/p&gt;
+        
+        &lt;h2&gt; scaleX(2)&lt;/h2&gt;
+        &lt;p class="scaleX"&gt;&lt;/p&gt;
+        
+        &lt;h2&gt; scaleY(2)&lt;/h2&gt;
+        &lt;p class="scaleY"&gt;&lt;/p&gt;
+        
+        &lt;h2&gt; scale(2,0.5)&lt;/h2&gt;
+        &lt;p class="scale"&gt;&lt;/p&gt;
+        
+        &lt;h2&gt; skewX(20deg)&lt;/h2&gt;
+        &lt;p class="skewX"&gt;&lt;/p&gt;
+        
+        &lt;h2&gt; skewY(20deg)&lt;/h2&gt;
+        &lt;p class="skewY"&gt;&lt;/p&gt;
+        
+        &lt;h2&gt; rotateX(50deg)&lt;/h2&gt;
+        &lt;p class="rotateX"&gt;&lt;/p&gt;
+        
+        &lt;h2&gt; rotateY(50deg)&lt;/h2&gt;
+        &lt;p class="rotateY"&gt;&lt;/p&gt;
+        
+        &lt;h2&gt; rotateZ(50deg)&lt;/h2&gt;
+        &lt;p class="rotateZ"&gt;&lt;/p&gt;
+        
+        &lt;h2&gt; rotate(50deg)&lt;/h2&gt;
+        &lt;p class="rotate"&gt;&lt;/p&gt;
+        
+        &lt;h2&gt; rotate3d(50deg)&lt;/h2&gt;
+        &lt;p class="rotate3d"&gt;&lt;/p&gt;
+        &lt;/td&gt;
+        
+        &lt;/tr&gt;&lt;/table&gt;
+    &lt;/body&gt;
+
+&lt;/html&gt;300px"</pre>
+        </td></tr></table>
+    </body>
+
+</html>

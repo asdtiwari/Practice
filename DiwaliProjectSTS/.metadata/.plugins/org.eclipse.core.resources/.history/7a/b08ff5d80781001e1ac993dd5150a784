@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Home</title>
+	</head>
+	<body>
+		<h1>Welcome to spring boot web app</h1>
+		
+		<form>
+			<label> ID </label>
+			<input type="text" name="data">
+			<input type="submit" title="Must re-check all the details before submit">
+		</form>
+	</body>
+</html>

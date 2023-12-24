@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation</title>
+        <style>
+            dt{font-size: 20px;}
+            
+            dd{font-size: 15px;}
+            
+            p{border: 5px solid red;
+            height: 200px;
+            width: 300px;
+            background-color: aqua;
+            animation-name: pattern1;
+            animation-duration: 10s;
+            animation-iteration-count: infinite}
+            
+            @keyframes pattern1
+            {
+                0%{background-color: aqua;
+                height: 200px;
+                width: 300px; 
+                border-radius: 0px;
+                border-style: solid;}
+                
+                25%{background-color: blue;
+                height: 400px;
+                width: 400px;
+                border-radius: 400px;
+                border-style: inset;}
+                
+                50%{background-color: skyblue;
+                height: 200px;
+                width: 300px;
+                border-radius: 0px 200px;
+                border-style: outset;}
+                
+                75%{background-color: darkslateblue;
+                height: 400px;
+                width: 400px;
+                border-radius: 200px 0px;
+                border-style: groove;}
+                
+            }
+        </style>
+    </head>
+    
+    <body>
+        <fieldset><table><tr>
+            <td><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Animation&lt;/title&gt;
+        &lt;style&gt;
+            p{border: 5px solid red;
+            height: 200px;
+            width: 300px;
+            background-color: aqua;
+            animation-name: pattern1;
+            animation-duration: 10s;
+            animation-iteration-count: infinite}
+            
+            @keyframes pattern1
+            {
+                0%{background-color: aqua;
+                height: 200px;
+                width: 300px; 
+                border-radius: 0px;
+                border-style: solid;}
+                
+                25%{background-color: blue;
+                height: 400px;
+                width: 400px;
+                border-radius: 400px;
+                border-style: inset;}
+                
+                50%{background-color: skyblue;
+                height: 200px;
+                width: 300px;
+                border-radius: 0px 200px;
+                border-style: outset;}
+                
+                75%{background-color: darkslateblue;
+                height: 400px;
+                width: 400px;
+                border-radius: 200px 0px;
+                border-style: groove;}
+                
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+            &lt;td&gt;&lt;center&gt;&lt;p&gt;&lt;/p&gt;&lt;/center&gt;&lt;/td&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre></td>
+            
+            <td> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; </td>
+            
+            <td><center><p></p></center></td>
+        </tr></table></fieldset>
+        
+        <hr>
+        
+        <ul>
+            <li>In this animation, animation time is divided into parts using 0% 25% 50% and 75%</li>
+        </ul>
+    </body>
+</html>

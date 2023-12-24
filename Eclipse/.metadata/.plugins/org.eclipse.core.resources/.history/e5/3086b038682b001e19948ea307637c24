@@ -1,0 +1,16 @@
+package com.acer.program1;
+
+import java.util.Comparator;
+
+public class SearchingMethodology implements Comparator {
+
+	@Override
+	public int compare(Object o1, Object o2) {
+		if (((Employee)o1).id == ((Employee)o2).id) {
+			return 0;
+		}
+			return 1;
+		}
+	}
+
+}

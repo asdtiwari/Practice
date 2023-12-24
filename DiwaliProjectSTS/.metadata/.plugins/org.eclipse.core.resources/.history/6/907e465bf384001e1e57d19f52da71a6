@@ -1,0 +1,5 @@
+package com.minorProject.studentZone.services;
+
+public interface StudentServices {
+
+}

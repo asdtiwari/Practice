@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML with CSS
+        </title>
+    </head>
+    
+    <body><fieldset style="border:10px inset red; border-radius: 50px;">
+        <h3 style="font-family: cursive; color:chocolate; background-color: burlywood; width:auto; height: 75px; text-align: center; font-size: 50px;">Basic CSS Properties</h3>
+        
+        <hr>
+        
+        <p style="font-family:cursive;"> &lt;p style="font-family:cursive;"&gt;</p>
+        
+        <p style="color:chocolate;">&lt;p style="color:chocolate;"&gt;</p>
+        
+        <p style="background-color:burlywood; width:auto; height:75px;">&lt;p style="background-color:burlywod; width:auto; height:25px;"&gt;</p>
+        
+        <p style="text-align:center;">&lt;p style="text-align:center;"&gt;</p>
+        
+        <p style="font-size:50px;"> &lt;p style="font-size:50px";&gt;</p>
+    </fieldset>
+    
+    <hr>
+    
+    <fieldset>
+        <center> <h2> Cascading Style Sheet (CSS)</h2></center>
+        
+        <pre>CSS is used to layout the webpage using CSS properties.</pre>
+        
+        <hr>
+        
+        <h3>Basic CSS Properties:</h3>
+        <ul>
+            <li>font-size</li>
+            <li>font-style</li>
+            <li>color</li>
+            <li>background-color</li>
+            <li>text-align</li>
+        </ul>
+        
+        <hr>
+        
+        <h3>Terminologies:</h3>
+        <center><b>&lt;tag attribute="property:value;"&gt;</b></center>
+        <ul>
+            <li>Tag</li>
+            <li>Attribute</li>
+            <li>Property</li>
+            <li>Value</li>
+        </ul>
+        
+        <hr>
+        
+        <h3> Types of CSS: </h3>
+        <ol>
+            <li>Inline CSS</li>
+            <li>Internal CSS</li>
+            <li>External CSS</li>
+        </ol>
+        
+        <hr>
+        
+        <dl>
+            <dt><b>Inline CSS:</b></dt>
+            <ul>
+                <li>It is used to apply unique style to html element.</li>
+                <li>Example: <pre>&lt;tag attribute="property:value;"&gt;</pre></li>
+            </ul>
+            
+            <hr>
+
+            <dt><b>Internal CSS:</b></dt>
+            <ul>
+                <li> It is used to apply styling to single html document/page.</li>
+                <li>Here, we use style as tag i.e., &lt;style&gt; &lt;/style&gt;</li>
+                <li>An internal CSS is defined in the head section of an HTML page, within style tag.</li>
+                <li>Asterisk (*) is used to specify every elements present in html page</li>
+                <li>Example: <pre>&lt;!DOCUMENT html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt; Internal CSS &lt;/tilte&gt;
+            &lt;style&gt;
+                h2, h3, p, pre{color: darkmagenta; 
+                font-family: cursive;
+                fontsize: 20px;
+                }
+            &lt;/style&gt;
+            &lt;/head&gt;
+        &lt;body&gt; 
+            ...
+        &lt;/body&gt;
+    &lt;/html&gt;</pre></li>
+            </ul>
+            
+            <hr>
+            
+            <dt><b>External CSS:</b></dt>
+            <dd><ul>
+                <li>The external stylesheet is used when we want to make changes on multiple html documents.</li>
+                <li>In External css we are creating seperate stylesheet and we can link this stylesheet to multiple html documents by using the following element:<br> &emsp; &lt;link href="stylesheetname.css" rel="stylesheet"&gt;</li>
+                <li><b>rel:</b> This attribute defines the relationship between a linked source and the current document. "rel" specifies the relationship between two documents. rel is short form of relation.</li>
+                <li><b>link:</b> link is an empty element which contains only attribute and link is used to link external stylesheet to html documents.</li>
+                <li><b>href:</b> Hyper reference, this attribute is used to specify the location of the linked document.</li>
+                <li>Example of CSS file</li>
+                <pre>h3,p{color:blue;
+font-family: cursive;}</pre>
+            </ul></dd>
+        </dl>
+        
+        <hr>
+        <h2> Note:</h2>
+        <ul>
+            <li>&lt;h2 style="display: inline;"&gt; is a css property which makes the block level html tags as inline tags.</li>
+            <li>if consecutive two elements are block level then we have to apply this property in both.</li>
+        </ul>
+        <hr>
+        
+        <h2 style="display: inline;">Selectors</h2>
+        <pre style="display: inline;">are used to select html elements, you want to style.</pre>
+        
+        <ul>
+            <li>Element Selector</li>
+            <li>Group Selector</li>
+            <li>Id Selector</li>
+            <li>Class Selector</li>
+            <li>Universal Selector</li>
+        </ul>
+        
+        <hr>
+        
+        <h3>Element Selector </h3>
+        <ul>
+            <li>Whenever we are selecting html element by using element name to give the styling to it are called as element selector</li>
+            <li>Example:<pre>&lt;html&gt;
+	&lt;head&gt;
+		&lt;style&gt;
+			p{color:blue}
+		&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;p&gt; ... &lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre></li>
+        </ul>
+        
+        <hr>
+        
+        <h3>Group Selector:</h3>
+        <ul>
+            <li>It is used to select html group to give same style definition.</li>
+            <li>Example: <pre>&lt;html&gt;
+	&lt;head&gt;
+		&lt;style&gt;
+			p, h3, h1, pre{color:blue}
+		&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;p&gt; ... &lt;/p&gt;
+		&lt;h3&gt; ... &lt;/h3&gt;
+		&lt;h1&gt; ... &lt;/h1&gt;
+		&lt;pre&gt; ... &lt;/pre&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre></li>
+        </ul>
+        
+        <hr>
+        
+        <h3>ID Selector:</h3>
+        <ul>
+            <li>It is used to select html element by using Unique ID</li>
+            <li>This Unique ID is given by using id attribute.</li>
+            <li>Example: <pre>&lt;html&gt;
+	&lt;head&gt;
+		&lt;style&gt;
+			#one{color:blue}
+			#two{color:blue}
+			#three{color:blue}
+			#four{color:blue}
+		&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h3 id = "one"&gt; ... &lt;/p&gt;
+		&lt;h3 id = "two"&gt; ... &lt;/h3&gt;
+		&lt;h3 id = "three"&gt; ... &lt;/h1&gt;
+		&lt;h3 id = "four"&gt; ... &lt;/pre&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre></li>
+            <li>ID should not start with numeric value</li>
+            <li>While selecting an element using id we have to use "#"</li>
+            <li>ID is more strong, fast and specific than Class.</li>
+        </ul>
+        
+        <hr>
+        
+        <h3>Class Selector:</h3>
+        <ul>
+            <li>It is used to select html element by using element class name.</li>
+            <li>This class is given by using class attribute.</li>
+            <li>Example: <pre>&lt;html&gt;
+	&lt;head&gt;
+		&lt;style&gt;
+			.one{color:blue}
+			.two{color:blue}
+			.three{color:blue}
+			.four{color:blue}
+		&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h3 class = "one"&gt; ... &lt;/p&gt;
+		&lt;h3 class = "two"&gt; ... &lt;/h3&gt;
+		&lt;h3 class = "three"&gt; ... &lt;/h1&gt;
+		&lt;h3 class = "four"&gt; ... &lt;/pre&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre></li>
+            <li>Class should not start with numeric value</li>
+            <li>While selecting an element using class we have to use "."</li>
+        </ul>
+        
+        <hr>
+        
+        <h3>Universal Selector:</h3>
+        <ul>
+            <li>It selects all the html elements of the page</li>
+            <li> Example: <pre>&lt;html&gt;
+	&lt;head&gt;
+		&lt;style&gt;
+			*{font-family: cursive;
+			background-color: aqua;
+			}
+		&lt;/style&gt;
+	&lt;/head&gt;
+&lt;/html&gt;
+</pre></li>
+        </ul>
+        
+        <hr>
+        <h2> Border:</h2>
+        <ul>
+            <li>It is a CSS property.</li>
+            <li> Example 1:<pre>&lt;html&gt;
+	&lt;head&gt;
+		 ... 
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h3 style="border: 10px solid red;
+			height:200px;
+			width: 200px;&gt; 
+			...
+		&lt;/h3&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</pre></li>
+            <li> Example 2: <pre>&lt;html&gt;
+	&lt;head&gt;
+		 ... 
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h3 style="border-width: 10px;
+			border-color: red;
+			border-style: solid;
+			height:200px;
+			width: 200px;&gt; 
+			...
+		&lt;/h3&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</pre></li>
+            <li>CSS Border Style
+                <ul>
+                    <li> <big>dotted</big> defines a dotted border </li>
+                    <li><big>dashed</big> defines a dashed border</li>
+                    <li><big>solid</big> defines a solid border</li>
+                    <li><big>double</big> defines a double border</li>
+                    <li><big>groove</big> defines a 3D ridged border. The effect depends on the border-color value</li>
+                    <li><big>ridge</big> defines a 3D ridged border. The effect depends on the border-color value.</li>
+                    <li><big>inset</big> defines a 3D inset border. The effect depends on the border-color value.</li>
+                    <li><big>outset</big> defines a 3D outset border. The effect depends on the border-color value.</li>
+                    <li><big>none</big> defines no border.</li>
+                    <li><big>hidden</big> defines hidden border.</li>
+                </ul>
+            </li>
+            <li>We can use multiple border-style too. E.g.: "border-style=dotted dashed solid double;"</li>
+            <li>border is divided into four parts: top, bottom, left &amp; right. We can explicitly define each parts of border as per our requirements. Example: "border-top-style: dashed;"</li>
+            <li> If we want to apply width, style and color then we can directly tell by saying "border: width_value style_value color_value" instead of telling one by one.</li>
+            <li><b>border-radius</b></li>
+            <ul>
+                <li>border-radius is a property used to rounded the border</li>
+                <li>We have also four more parts of border viz top-left, top-right, bottom-left &amp; bottom-right to set the radius only.</li>
+                <li>If we apply single value to property "border-radius: value1;" then all the parts automatically set to be value1 only</li>
+                <li>If we apply double value to property "border-radius: value1 value2;" then top-left and bottom-left will assigned to value1 and rest to value2.</li>
+                <li>If we apply triple value to property "border-radius: value1 value2 value3;" then value1 would be assigned to top-left &amp; bottom-right while value2 and value3 would be assigned to top-right and bottom-left respectively.</li>
+                <li>If we apply four value to property "border-radius: value1 value2 value3 value4;" then value1, value2, value3 and value4 would be assigned to top-left, top-right, bottom-left and bottom-right respectively.</li>
+                <li>If we don't provide the value for border-color then by default it adopt the color of text</li>
+                <li>Some Examples: Check the code for better understanding...
+                <table><tr><td><p style="border-style: solid; border-color: red; border-radius: 100px; height: 100px; width: 100px;"></p></td>
+                <td><p style="border-style: solid; border-color: red; border-radius: 0px 100px; height: 100px; width: 100px; display: inline-block;"></p></td>
+                <td><p style="border-style: solid; border-color: red; border-radius: 50px 0px 100px; height: 100px; width: 100px; display: inline-block;"></p></td>
+                <td><p style="border-style: solid; border-color: red; border-radius: 0px 80px 50px 100px; height: 100px; width: 100px; display: inline-block;"></p></td></tr></table>
+                </li>
+            </ul>
+            
+        </ul>
+        
+        <hr>
+        
+        <center> <h2> &lt;span&gt; tag</h2></center>
+        <pre>&lt;p style="font-size: 30px"&gt;&lt;center&gt;
+&lt;span style="color:blue;"&gt;G&lt;/span&gt;
+&lt;span style="color:red;"&gt;o&lt;/span&gt;
+&lt;span style="color:orange"&gt;o&lt;/span&gt;
+&lt;span style="color:blue;"&gt;g&lt;/span&gt;
+&lt;span style="color:green;"&gt;l&lt;/span&gt;
+&lt;span style="color:red;"&gt;e&lt;/span&gt;
+&lt;/center&gt;&lt;/p&gt;</pre>
+        <p style="font-size: 30px"><center>
+        <span style="color:blue;">G</span>
+        <span style="color:red;">o</span>
+        <span style="color:orange">o</span>
+        <span style="color:blue;">g</span>
+        <span style="color:green;">l</span>
+        <span style="color:red;">e</span>
+        </center></p>
+        <ul>
+            <li>Span is an inline tag which is used to display the content in one line.</li>
+            <li> We can use it with &lt;p&gt; &lt;/p&gt; and &lt;pre&gt; &lt;/pre&gt;</li>
+            <li>The span tag is used for the grouping of the inline html elements.</li>
+            <li>We can use span tag as a container to group inline elements together so we can style or manipulate them with javascript.</li>
+        </ul>
+        
+        <hr>
+        
+        <center><h2> &lt;div&gt; tag</h2></center>
+        
+        <pre>&lt;div style="color:white; font-family: cursive; background: blue"&gt;
+&lt;p&gt; This is Akhilesh Tiwari.&lt;/p&gt;
+&lt;pre&gt; This is from MU&lt;/pre&gt;
+&lt;/div&gt;</pre>
+        
+        <div style="color:white; font-family: cursive; background: blue;">
+        <p> This is Akhilesh Tiwari.</p>
+        <pre> This is from MU</pre>
+        </div>
+        
+        <ul>
+            <li>&lt;div&gt; &lt;/div&gt; is used to group multiple html tags to provide similar styles.</li>
+            <li>It defines a division or a section in html document.</li>
+            <li>div tag is used as a container for html elements which is then styled with css.</li>
+            <li>div tag is block level element.</li>
+        </ul>
+    </fieldset>
+    </body>
+</html>

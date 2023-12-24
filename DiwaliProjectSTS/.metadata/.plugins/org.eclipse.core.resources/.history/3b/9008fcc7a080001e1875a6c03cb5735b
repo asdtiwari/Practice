@@ -1,0 +1,17 @@
+package com.student.crud.services;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.student.crud.entity.Student;
+
+@Service
+public interface StudentServices {
+
+	String addStudent(Student s);
+	Student getStudent(String id);
+	List<Student> getAllStudent();
+	String updateStudent(Student s);
+	String deleteStudetn(String id);
+}

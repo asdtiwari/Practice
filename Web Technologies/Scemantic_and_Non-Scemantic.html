@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Scemantic &amp; Non-Scemantic
+        </title>
+        
+        <style>
+            *{font-family: cursive;
+            font-size: 30px;
+            color: white;
+            background-color: darkblue}
+            
+            .border{border: 5px dashed white;
+            text-align: center;}
+            
+            .border1{border-bottom: 5px dashed white;
+            text-align: center;}
+            
+            .border2{border-bottom: 5px dashed white;
+            border-right: 5px dashed white;
+            text-align: center;}
+        
+        </style>
+    </head>
+    
+    <body>
+        <center><h2> Scemantic &amp; Non Scemantic Element</h2></center>
+        
+        <ul>
+            <li><span style="font-size: 35px; font-family: chiller;">Scemantic elements</span> are such elements which give information about the content or text to the programer and the browser, e.g., &lt;table&gt; &lt;/table>
+            <table class="border">
+                <tr>
+                    <td colspan="2" class="border1">&lt;header&gt; &lt;/header&gt;</td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" class="border1"> &lt;nav&gt; &lt;nav&gt;</td>
+                </tr>
+                
+                <tr>
+                    <td class="border2">&lt;section&gt; &lt;/section&gt;</td>
+                    
+                    <td rowspan="2" class="border1">&lt;aside&gt; &lt;aside&gt;</td>
+                </tr>
+                
+                <tr>
+                    <td class="border2">&lt;article&gt; &lt;/article&gt;</td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">&lt;footer&gt; &lt;/footer&gt;</td>
+                </tr>
+            </table></li>
+            
+            <li>Similarly <span style="font-size: 35px; font-family: chiller">Non-Scemantic elements</span> are the elements which tell nothing about its content and their functionality, e.g. &lt;span&gt; &lt;/span&gt;</li>
+        
+        </ul>
+    </body>
+</html>

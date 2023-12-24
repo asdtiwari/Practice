@@ -1,0 +1,28 @@
+package com.acer.program1;
+
+import java.util.ArrayList;
+
+public class DemoEmployeeApp {
+	
+	public static void main(String[] args) {
+		
+		Employee e1 = new Employee(100, "Amrish");
+		Employee e2 = new Employee(101, "Babita");
+		Employee e3 = new Employee(102, "Chitransh");
+		Employee e4 = new Employee(103, "Divyansh");
+		Employee e5 = new Employee(104, "Eureka");
+		
+		ArrayList<Employee> em = new ArrayList<Employee>();
+		em.add(e1);
+		em.add(e2);
+		em.add(e3);
+		em.add(e4);
+		em.add(e5);
+		
+		System.out.println(em);
+		
+		
+		
+	}
+
+}

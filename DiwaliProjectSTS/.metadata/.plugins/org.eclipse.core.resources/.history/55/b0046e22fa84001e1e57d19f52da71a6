@@ -1,0 +1,52 @@
+package com.minorProject.studentZone.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.minorProject.studentZone.services.StudentServices;
+
+@Controller
+@RequestMapping("/student")
+public class ProjectController {
+
+	StudentServices ss;
+
+	public ProjectController(StudentServices ss) {
+		super();
+		this.ss = ss;
+	}
+	
+	@GetMapping(value="/index")
+	public String index() {
+		return "redirect:/";
+	}
+	
+	@GetMapping(value="/register")
+	public String register() {
+		return "/register";
+	}
+	
+	@GetMapping(value="/viewInfo")
+	public String viewInfo() {
+		return "/viewInfo";
+	}
+	
+	@GetMapping(value="/update")
+	public String update() {
+		return "/update";
+	}
+	
+	@GetMapping(value="/remove")
+	public String remove() {
+		return "/remove";
+	}
+	
+	@GetMapping(value="/showAllInfo")
+	public String showAllInfo(Model model) {
+		ss.getAllStudent(model);
+		return "/showAllInfo";
+	}
+	
+}

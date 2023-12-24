@@ -1,0 +1,63 @@
+package com.jdbc.com;
+
+import java.sql.*;
+import java.util.Scanner;
+
+public class InsertDemo2 {
+
+	public static void main(String[] args) {
+
+		new InsertDemo2().run();
+	}
+
+	public void run() {
+
+		String url = "jdbc:mysql://localhost/demo";
+		String user = "ASDTiwari";
+		String code = "0@ASDTiwari";
+
+		String id, name, marks, sql;
+		int exit = 0, row = 0;
+
+		Scanner scan = new Scanner(System.in);
+
+		try {
+
+			Connection con = DriverManager.getConnection(url,user,code);
+
+			System.out.println("Connection Established " + con);
+
+			do {
+				
+				System.out.print("Enter Id: ");
+				id = scan.next();
+				
+				System.out.print("Enter Name: ");
+				name = scan.next();
+				
+				System.out.print("Enter Marks: ");
+				marks = scan.next();
+				
+				sql = writeQuery(id, name, marks);
+				Statement st = con.createStatement();
+				row += st.executeUpdate(sql);
+
+				System.out.print("To add more insert 0: ");
+				exit = scan.nextInt();
+				
+			}while(exit != 1);
+
+		}catch(Exception ex) {
+
+			ex.printStackTrace();
+		}finally {
+			
+			System.out.println("Rows Updated: " + row);
+		}
+	}
+
+	public String writeQuery(String id, String name, String marks) {
+
+		return "insert into student values(" + id + ", '" + name + "', " + marks + ");";
+	}
+}

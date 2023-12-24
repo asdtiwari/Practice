@@ -1,0 +1,5 @@
+package com.minorProject.studentZone.entity;
+
+public class Student {
+
+}

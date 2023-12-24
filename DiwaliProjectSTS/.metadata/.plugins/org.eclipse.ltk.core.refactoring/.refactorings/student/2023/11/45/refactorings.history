@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;batch&apos; in &apos;com.student.crud.entity.Student&apos; to &apos;branch&apos;&#x0D;&#x0A;- Original project: &apos;student&apos;&#x0D;&#x0A;- Original element: &apos;com.student.crud.entity.Student.batch&apos;&#x0D;&#x0A;- Renamed element: &apos;com.student.crud.entity.Student.branch&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;batch&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.student.crud.entity{Student.java[Student^batch" name="branch" references="true" setter="false" stamp="1699591455114" textual="false" version="1.0"/>
+</session>

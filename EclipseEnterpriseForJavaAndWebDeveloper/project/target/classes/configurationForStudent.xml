@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+	
+	<!-- Setting values using setters -->
+	<bean id = "student" class = "com.maven.project.Student">
+		<property name = "rollNo"> <value> 101 </value> </property>
+		<property name = "name"> <value> Deep </value> </property>
+		<property name = "cgpa"> <value> 7.9 </value> </property>
+	</bean>
+	
+	<!-- Setting values using constructor -->
+	<bean id = "student2" class = "com.maven.project.Student">
+		<constructor-arg value="102"/>
+		<constructor-arg value="Aalia"/>
+		<constructor-arg value="9.8"/>
+	</bean>
+</beans>
